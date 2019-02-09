@@ -10,6 +10,7 @@ function handleUpdate() {
     //This comes from the 'data-sizing' added to the blur and spacing inputs
     //We also want to add || "" to capture the change of the background image color because it does not have a suffix
     //..As the base color is simply a hex code that is the value and doesn't need px appended to it
+    //Without || '', we will see undefined with changing the hex code of the base color
     const suffix = this.dataset.sizing ||"";
 
     //Select variables and set property to the value of the input 
