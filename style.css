@@ -16,6 +16,8 @@ input{
     width: 100px;
 }
 
+/* With CSS variables, we claim them on some element. In this case, we will claim them on the root element */
+/* root is as high as you can go, similar to claiming variables on the HTML element */
 :root{
     --base: #a55e95;
     --spacing: 10px;
