@@ -1,9 +1,30 @@
-html {
-    background-color: #afb9c9;
-}
-
 #pikes_peak {
     width: 550px;
     height: 350px;
     margin: 5rem;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: bolder;
+}
+
+input{
+    width: 100px;
+}
+
+:root{
+    --base: #a55e95;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+
 }
