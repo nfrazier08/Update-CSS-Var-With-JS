@@ -18,12 +18,14 @@ input{
 
 /* With CSS variables, we claim them on some element. In this case, we will claim them on the root element */
 /* root is as high as you can go, similar to claiming variables on the HTML element */
+/* We defined the variables and set the default values */
 :root{
     --base: #a55e95;
     --spacing: 10px;
     --blur: 10px;
 }
 
+/* this is how we use the variables defined just above at the root element */
 img {
     padding: var(--spacing);
     background: var(--base);
