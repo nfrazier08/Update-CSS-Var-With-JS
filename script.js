@@ -2,6 +2,7 @@ window.onload = function(){
 
 //Query selector returns node list not an array
 //Select all inputs on the page
+//A forEach can be used to map over the node list -as we do below
 const inputs = document.querySelectorAll('.controls input');
 
 //Here we are updating the CSS variables
@@ -13,8 +14,9 @@ function handleUpdate() {
     //Without || '', we will see undefined with changing the hex code of the base color
     const suffix = this.dataset.sizing ||"";
 
-    //Select variables and set property to the value of the input 
+    //Select variables (by selecting the whole documnent -root) and set property to the value of the input 
     //We also need to add suffix to the end of it to append the pixels
+    //this.name is equal to the name set on the inputs
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
 
     console.log(this.name);

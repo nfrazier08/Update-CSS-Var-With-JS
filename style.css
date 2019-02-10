@@ -25,13 +25,14 @@ input{
     --blur: 10px;
 }
 
-/* this is how we use the variables defined just above at the root element */
+/* This is how we use the variables defined just above at the root element */
 img {
     padding: var(--spacing);
     background: var(--base);
     filter: blur(var(--blur));
 }
 
+/* anything with the class of highlight (hl) is going to have the color of base */
 .hl{
 
     color: var(--base);
